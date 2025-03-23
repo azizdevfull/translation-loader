@@ -13,11 +13,11 @@ class PostController extends Controller
      */
     public function index()
     {
-        LanguageLine::create([
-            'group' => 'validation',
-            'key' => 'required',
-            'text' => ['en' => 'This is a required field', 'uz' => 'Bu maydon to\'ldirilishi shart'],
-        ]);
+        // LanguageLine::create([
+        //     'group' => 'validation',
+        //     'key' => 'numeric',
+        //     'text' => ['en' => 'This field must be numeric', 'uz' => 'Bu maydon raqam bo\'lishi kerak'],
+        // ]);
 
         return view('welcome');
     }
