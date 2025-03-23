@@ -7,18 +7,18 @@ return [
      * the Spatie\TranslationLoader\TranslationLoaders\TranslationLoader-interface.
      */
     'translation_loaders' => [
-        Spatie\TranslationLoader\TranslationLoaders\Db::class,
+        \App\Spatie\TranslationLoader\TranslationLoaders\Db::class,
     ],
 
     /*
      * This is the model used by the Db Translation loader. You can put any model here
      * that extends Spatie\TranslationLoader\LanguageLine.
      */
-    'model' => Spatie\TranslationLoader\LanguageLine::class,
+    'model' => \App\Models\LanguageLine::class,
 
     /*
      * This is the translation manager which overrides the default Laravel `translation.loader`
      */
-    'translation_manager' => Spatie\TranslationLoader\TranslationLoaderManager::class,
+    'translation_manager' => \App\Spatie\TranslationLoader\TranslationLoaderManager::class,
 
 ];

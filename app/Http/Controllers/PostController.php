@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePostRequest;
+use App\Models\LanguageLine;
 use Illuminate\Http\Request;
-use Spatie\TranslationLoader\LanguageLine;
 
 class PostController extends Controller
 {
@@ -15,8 +15,8 @@ class PostController extends Controller
     {
         // LanguageLine::create([
         //     'group' => 'validation',
-        //     'key' => 'numeric',
-        //     'text' => ['en' => 'This field must be numeric', 'uz' => 'Bu maydon raqam bo\'lishi kerak'],
+        //     'key' => 'required',
+        //     'text' => ['en' => 'This field must be required', 'uz' => 'Bu maydon to\'ldirilishi kerak'],
         // ]);
 
         return view('welcome');
